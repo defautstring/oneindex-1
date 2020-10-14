@@ -10,5 +10,5 @@ services:
     # - SSH_PASSWORD=root
     # - TZ=Asia/Shanghai
     volumes:
-    - ./config:/var/www/html/config
-    - ./cache:/var/www/html/cache
+    - ./config:/var/www/html/oneindex/config
+    - ./cache:/var/www/html/oneindex/cache
