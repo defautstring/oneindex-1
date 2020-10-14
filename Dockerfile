@@ -12,7 +12,8 @@ RUN apk add --no-cache \
     mv /php.ini /usr/local/etc/php && \
     chmod +x /docker-entrypoint.sh && \
     git clone -b onemanager https://github.com/defautstring/OneManager-php.git /var/www/html/oneindex && \
-    ssh-keygen -A
+    ssh-keygen -A && \
+    chmod 666  /var/www/html/oneindex/config.php
 
 EXPOSE 80
 # Persistent config file and cache
