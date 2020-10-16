@@ -17,5 +17,5 @@ RUN apk add --no-cache \
 
 EXPOSE 80
 # Persistent config file and cache
-VOLUME [ "/var/www/html", "/var/www/html" ]
+# VOLUME [ "/var/www/html", "/var/www/html" ]
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
